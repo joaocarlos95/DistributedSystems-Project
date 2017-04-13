@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: pt.upa.transporter.ws.it.ExampleIT
+-------------------------------------------------------------------------------
+Tests run: 30, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 55.996 sec <<< FAILURE! - in pt.upa.transporter.ws.it.ExampleIT
+testDecideJob5(pt.upa.transporter.ws.it.ExampleIT)  Time elapsed: 14.091 sec  <<< FAILURE!
+java.lang.AssertionError
+	at pt.upa.transporter.ws.it.ExampleIT.testDecideJob5(ExampleIT.java:293)
+

@@ -1,0 +1,9 @@
+pt/upa/ca/ws/GetCertificatesResponse.class
+pt/upa/ca/ws/SayHello.class
+pt/upa/ca/ws/SayHelloResponse.class
+pt/upa/ca/ws/Ca.class
+pt/upa/ca/ws/cli/CaClient.class
+pt/upa/ca/ws/CaImplService.class
+pt/upa/ca/ws/package-info.class
+pt/upa/ca/ws/GetCertificates.class
+pt/upa/ca/ws/ObjectFactory.class

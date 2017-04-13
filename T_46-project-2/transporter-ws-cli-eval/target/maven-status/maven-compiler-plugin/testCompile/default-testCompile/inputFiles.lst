@@ -1,0 +1,8 @@
+/home/facas/SD_trab/T_46-project/transporter-ws-cli-eval/src/test/java/pt/upa/transporter/ws/it/RequestJobIT.java
+/home/facas/SD_trab/T_46-project/transporter-ws-cli-eval/src/test/java/pt/upa/transporter/ws/it/JobStatusIT.java
+/home/facas/SD_trab/T_46-project/transporter-ws-cli-eval/src/test/java/pt/upa/transporter/ws/it/RejectJobIT.java
+/home/facas/SD_trab/T_46-project/transporter-ws-cli-eval/src/test/java/pt/upa/transporter/ws/cli/TransporterClientTest.java
+/home/facas/SD_trab/T_46-project/transporter-ws-cli-eval/src/test/java/pt/upa/transporter/ws/it/AbstractIT.java
+/home/facas/SD_trab/T_46-project/transporter-ws-cli-eval/src/test/java/pt/upa/transporter/ws/it/AcceptJobIT.java
+/home/facas/SD_trab/T_46-project/transporter-ws-cli-eval/src/test/java/pt/upa/transporter/ws/it/PingIT.java
+/home/facas/SD_trab/T_46-project/transporter-ws-cli-eval/src/test/java/pt/upa/transporter/ws/it/ClearJobIT.java

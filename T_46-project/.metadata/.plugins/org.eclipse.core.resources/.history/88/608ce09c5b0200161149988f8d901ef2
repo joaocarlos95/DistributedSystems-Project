@@ -1,0 +1,106 @@
+package pt.upa.transporter.ws;
+
+import org.junit.*;
+import static org.junit.Assert.*;
+
+/**
+ *  Unit Test example
+ *  
+ *  Invoked by Maven in the "test" life-cycle phase
+ *  If necessary, should invoke "mock" remote servers 
+ */
+public class ExampleTest {
+
+    // static members
+
+
+    // one-time initialization and clean-up
+
+    @BeforeClass
+    public static void oneTimeSetUp() {
+
+    }
+
+    @AfterClass
+    public static void oneTimeTearDown() {
+
+    }
+
+
+    // members
+
+    private TransporterPort port;
+    // initialization and clean-up for each test
+
+    @Before
+    public void setUp() {
+    	port = new TransporterPort();
+    	port.transport = "UpaTransporter1";
+    	
+    }
+
+    @After
+    public void tearDown() {
+    	port = null;
+    }
+
+
+    // tests
+
+    @Test
+    public void testPing() {
+
+        assertEquals(" ping...daqui transporter\nUpa!", port.ping("Upa"));
+    
+    }
+    
+    @Test(expected = BadPriceFault_Exception.class)
+    public void testRequestJob(){
+    	
+    	try {
+			port.requestJob("Lisboa", "Coimbra", -1);
+			fail("no exception");
+		} catch (BadLocationFault_Exception e) {
+			e.printStackTrace();
+		} catch (BadPriceFault_Exception e) {
+			fail("exception");
+			e.printStackTrace();
+		}
+    }
+    
+    @Test(expected = BadLocationFault_Exception.class)
+    public void testRequestJob1() throws Exception{
+
+			port.requestJob("Lisboa", "mbra", 10);
+		
+    }
+    
+    @Test(expected = BadLocationFault_Exception.class)
+    public void testRequestJob2(){
+    	
+    	try {
+			port.requestJob("Lisb", "Coimbra", 10);
+			fail("no exception");
+		} catch (BadLocationFault_Exception e) {
+			e.printStackTrace();
+		} catch (BadPriceFault_Exception e) {
+			fail("exception");
+			e.printStackTrace();
+		}
+    }
+    
+    @Test
+    public void testRequestJob3(){
+    	
+    	try {
+			assertNull(port.requestJob("Lisboa", "Coimbra", 101));
+		} catch (BadLocationFault_Exception e) {
+			e.printStackTrace();
+		} catch (BadPriceFault_Exception e) {
+			fail("exception");
+			e.printStackTrace();
+		}
+    }
+    
+
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="pt.upa.transporter.ws.BadLocationFault_Exception"/>
+<fullyQualifiedTypeName name="java.util.Timer"/>
+<fullyQualifiedTypeName name="pt.upa.transporter.ws.TransporterPort.MyTimerTask"/>
+<fullyQualifiedTypeName name="mockit.Mocked"/>
+</qualifiedTypeNameHistroy>
